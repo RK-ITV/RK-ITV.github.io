@@ -233,6 +233,7 @@ article {
 	flex-wrap: wrap;			/* Sorgt für bei nicht ausreichendem Platz in der horizontale auf eine verlagerung in der Vertikale */
 	flex:1;					/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
 	align-items:center;			/* Die einzelnen Items werden nicht */
+	align-content: center;	/* Sorgt dafür, das es nicht in den 'footer'  läuft*/
 	padding-top: 3%;			/* Sorgt für einen kleinen Abstand zum 'section' */
 	
 }
@@ -250,9 +251,8 @@ span {
 	
 	/* Eigenschaften der Bilder */
 	article img{
-		width: 55%;			/* Deffinition der Bildgröße anhand der Breite */
-		height: 55%;			/* Deffinition der Bildgröße anhand der Höhe */
-		filter: grayscale(100%);	/* Grausetzen der Bilder */
+		width: 45%;			/* Deffinition der Bildgröße anhand der Breite */
+				filter: grayscale(100%);	/* Grausetzen der Bilder */
 	}
 }
 
@@ -265,8 +265,7 @@ span {
 	
 	/* Eigenschaften der Bilder */
 	article img{
-		width: 45%;			/* Deffinition der Bildgröße anhand der Breite */
-		height: 45%;			/* Deffinition der Bildgröße anhand der Höhe */
+		width: 40%;			/* Deffinition der Bildgröße anhand der Breite */
 		filter: grayscale(100%);	/* Grausetzen der Bilder */	
 	}
 }
@@ -276,8 +275,7 @@ span {
 	/* Eigenschaften der Bilder */
 	article img{
 		width:35%;			/* Deffinition der Bildgröße anhand der Breite */
-		height: 35%;			/* Deffinition der Bildgröße anhand der Höhe */
-		filter: grayscale(100%);	/* Grausetzen der Bilder */
+				filter: grayscale(100%);	/* Grausetzen der Bilder */
 	}
 }
 
