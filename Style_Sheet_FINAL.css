@@ -120,8 +120,15 @@ nav {
 		padding: 0px;				/* Keine äußere Umrandung */
 	}
 	
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		flex-wrap: warp;
+	}
+	
 	/* Einstellungen zum Dropdownmenü */
 	.dropdown-content {
+		z-index: 1;
 		font-size: 300%;			/* Größe der Schrift */
 		background-color: #C0C0C0; /* HTML Silver */
 		min-width: 160px;			/* Gibt eine Mindestgröße an */
