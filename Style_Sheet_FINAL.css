@@ -108,7 +108,8 @@ nav {
 	
 	/* ID für mobiles Menü */
 	#Max-Width-Nav {
-		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
+		font-size: 200%;			/* Größe der Schrift */
+		justify-content:center;			/* Zentieren des einzellenn Items in dem Container */
 
 	}
 	
@@ -185,7 +186,6 @@ li {
 
 /* Grundeinstellungen */
 section {
-	font-size: 200%;			/* Größe der Schrift */
     	display: flex;				/* Den Bereich als Flexbox definieren */
 	align-items: center;			/* Zentriert die einzelnen Elemente in der Flexbox  */
 	flex-direction: column;			/* Die einzelnen Elemente im Container werden von oben nach unten ausgerichtet */
@@ -194,6 +194,9 @@ section {
 
 /* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Weniger Gleich 1024px */
 @media only screen and (max-width: 1024px) {
+	section {
+		font-size: 200%;			/* Größe der Schrift */
+	}
 	section img{
 
 		width:45%;			/* Deffinition der Bildgröße anhand der Breite */
@@ -202,6 +205,10 @@ section {
 
 /* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Weniger Gleich 512px */
 @media only screen and (max-width: 512px) {
+	section {
+		font-size: 200%;			/* Größe der Schrift */
+	}
+	
 	section img {
 
 		width:60%;			/* Deffinition der Bildgröße anhand der Breite */
@@ -235,6 +242,7 @@ article {
 @media only screen and (max-width: 512px) {
 	/*  */
 	article {
+		font-size: 200%;			/* Größe der Schrift */
 		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
 	}
 	
@@ -250,6 +258,7 @@ article {
 @media only screen and (max-width: 1024px) {
 	/*  */
 	article {
+		font-size: 200%;			/* Größe der Schrift */
 		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
 	}
 	
