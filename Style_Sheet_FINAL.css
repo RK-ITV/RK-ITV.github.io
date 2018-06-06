@@ -107,7 +107,7 @@ nav {
 	
 	/* ID für mobiles Menü */
 	#Max-Width-Nav {
-		font-size: 200%;		/* Größe der Schrift */
+		font-size: 300%;		/* Größe der Schrift */
 		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
 
 	}
@@ -237,10 +237,6 @@ article {
 	padding-top: 3%;			/* Sorgt für einen kleinen Abstand zum 'section' */
 	
 }
-span {
-	padding: 0px;
-	margin: 0px;
-}
 
 /* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Größer Gleich 512px */
 @media only screen and (max-width: 512px) {
@@ -252,7 +248,7 @@ span {
 	/* Eigenschaften der Bilder */
 	article img{
 		width: 45%;			/* Deffinition der Bildgröße anhand der Breite */
-				filter: grayscale(100%);	/* Grausetzen der Bilder */
+		filter: grayscale(100%);	/* Grausetzen der Bilder */
 	}
 }
 
@@ -304,4 +300,19 @@ td.FotterTableTD{
 /* Aktion beim Überfahren mit der Maus */
 td.FotterTableTD:hover{
     background-color: #808080; 			/* Hintergrund der Menüpunkte werden eingefärbt in 'HTML DarkGray' */
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Größer Gleich 512px */
+@media only screen and (max-width: 512px) {
+	footer {
+		background: black;			/* Schwarzer Hintergrund */
+		font-size: 200%;			/* Größe der Schrift */
+	}
+	
+	/* Impresum und Kontakt */
+	td.FotterTableTD{
+		font-size: 200%;			/* Größe der Schrift */
+		padding: 5px 5px;				/* Eine Umrandung zu Abstandsgenerierung */
+	}
+
 }
