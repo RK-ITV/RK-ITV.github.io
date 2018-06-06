@@ -243,6 +243,7 @@ article {
 	/* Allgmeine Änderungen bei dem Medium */
 	article {
 		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
+		font-size: 200%;			/* Größe der Schrift */
 	}
 	
 	/* Eigenschaften der Bilder */
@@ -257,6 +258,7 @@ article {
 	/* Allgmeine Änderungen bei dem Medium */
 	article {
 		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
+		font-size: 200%;			/* Größe der Schrift */
 	}
 	
 	/* Eigenschaften der Bilder */
