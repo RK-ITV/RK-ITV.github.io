@@ -108,13 +108,14 @@ nav {
 	
 	/* ID für mobiles Menü */
 	#Max-Width-Nav {
+		font-size: 200%;			/* Größe der Schrift */
 		display:flex;				/* Normales Menüauf flexible setzen (Flexbox) */
 		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
 	}
 	
 	/* Einstellungen für den mobilen Menü Button */
 	#Preferences_for_Menu_Button {
-		font-size: 200%;			/* Größe der Schrift */
+		font-size: 400%;			/* Größe der Schrift */
 		margin: 0px;				/* Keine innere Umrandung */
 		padding: 0px;				/* Keine äußere Umrandung */
 	}
