@@ -18,7 +18,7 @@ body {
     background-color: #2f4f4f; 		/* Setzt die Hintergrundfarbe auf 'darkslategray' */
     background-image:   linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,		/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
                         rgba(0,0,0,0.9) 100%), 								/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
-                        url("../Projektdateien/Bilder/hotel-lobby.jpg");	/* Gibt das Hintergrundbild an, welches mit der Funiton 'linear-gradient' abgedunkelt wird */
+                        url("RK-ITV.github.io/Bilder/hotel-lobby.jpg");	/* Gibt das Hintergrundbild an, welches mit der Funiton 'linear-gradient' abgedunkelt wird */
     background-size: 90% 100%;		/* Setzt 10% der Seite mit der Hintergrundfarbe frei und verkleinert somit das Bild */
     background-repeat: no-repeat;	/* Verhindert das Wiederholen des Hintergrundbildes */
     background-attachment: fixed;	/* Verhindert das Mitlaufen des Hintergrundbildes */
@@ -70,7 +70,7 @@ a:hover {
 
 /* */
 header {
-    background-image:url("../Projektdateien/Bilder/hands.jpg");	/* Gibt das Bild an, welches im 'header' zu sehen ist */
+    background-image:url("RK-ITV.github.io/Bilder/hands.jpg");	/* Gibt das Bild an, welches im 'header' zu sehen ist */
     background-repeat:no-repeat;	/* Keine Wiederholung des Bildes */
     background-size: 100% 100%;		/* Volle große des Bildes */
     background-position-y: top;		/* Das Bild soll ganz oben auf der Seite anfangen */
