@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<!-- Die HTML Datei zum Projekt-->
+<!--
+In dieser Datei ist der HTML-Quellcode zum Projekt des Faches ITN festgehalten.
+-->
+
+<html>
+<!-- Kopfteil mit Sub-Informationen zur der Webseite  -->
+<head>
+    <title>
+        Startseite - WinWin
+    </title>
+    <meta charset="utf-8">
+    <meta>
+    <meta>
+    <!-- Die eingebundene CSS Datei, zur festlegung des Styles -->
+    <!-- 
+	<link rel="stylesheet" type="text/css" href="Style_Basic - Kopie.css">
+	<link rel="stylesheet" type="text/css" href="Style_Sheet_FINAL.css">
+	-->
+	<link rel="stylesheet" type="text/css" href="Style_Sheet_FINAL.css">
+</head>
+
+<!-- Haupteil, der "Körper", der Seite mit dem sichtbaren Quellcode -->
+<body>
+    <!-- XXX -->
+    <header id="WindowSideBorder">
+    </header>
+    <!-- XXX -->
+    <nav id="WindowSideBorder">
+		<ul class="dropdown">
+			<li id="Max-Width-Nav">
+				<p id="Preferences_for_Menu_Button">&#8801; Menü</p>
+				<!-- Sichtbarer Teil, bei eingeschränkter Breite -->
+				<div class="dropdown-content">
+					<a href="index.html">Startseite</a>
+					<a href="Über die Seite.html">Über die Seite</a>
+					<a href="Wer gewinnt.html">Wer gewinnt?</a>
+					<a href="Quellenangaben.html">Quellenangaben</a>
+					<a href="Haftungsausschuss.html">Haftungsausschuss</a>
+					<a href="Kontakt.html">Kontakt</a>
+					<a href="Impresum.html">Impresum</a>
+				</div>
+			</li>
+		</ul>
+			<!-- Sichtbarer Teil, bei voller Breite -->
+		<ul id="Min-Width-Nav">
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="Über die Seite.html">Über die Seite</a></li>
+				<li><a href="Wer gewinnt.html">Wer gewinnt?</a></li>
+				<li><a href="Quellenangaben.html">Quellenangaben</a></li>
+				<li><a href="Haftungsausschuss.html">Haftungsausschuss</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="Impresum.html">Impresum</a></li>
+		</ul>
+    </nav>
+    <!-- XXX -->
+    <section id="WindowSideBorder">
+		<form action="http://yourserver/contact.php" method="post">
+<table id="KontaktForm">
+  <tbody>
+    <tr>
+      <td>Ihr Anliegen:</td>
+      <td>
+        <select name="Anliegen">
+          <option value="Problem">Problem</option>
+          <option value="Katzen">Katzen</option>
+          <option value="Scherz">Ist das ein Scherz?</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Anrede:</td>
+      <td>
+        <input checked="checked" name="Anrede" type="radio" value="Herr" /> Herr
+        <input name="Anrede" type="radio" value="Frau" /> Frau
+		<input name="Anrede" type="radio" value="Katze" /> Katze
+      </td>
+    </tr>
+    <tr>
+      <td>Vorname:</td>
+      <td>
+        <input maxlength="50" name="Vorname" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>Nachname:</td>
+      <td>
+        <input name="Nachname" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input name="Email" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>Betreff:</td>
+      <td>
+        <input name="Betreff" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        Bitte schicken Sie mir Informationen über folgende Themen zu:<br />
+        <input name="Infos" size="Katzen" type="checkbox" /> Katzen
+        <input name="Infos" size="Mehr_Katzen" type="checkbox" /> Mehr Katzen
+        <input name="Infos" size="Warmes_Wasser" type="checkbox" /> Warmes Wasser
+      </td>
+    </tr>
+    <tr>
+      <td>Mitteilung:</td>
+      <td><textarea rows="5" name="Mitteilung">Ihre Mitteilung</textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="submit" value="Abschicken" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+</form>
+    </section>
+    <!-- XXX -->
+    <article id="WindowSideBorder">
+
+    </article>
+	
+	<!-- XXX -->
+	<footer id="WindowSideBorder">
+        <table class="FotterTable">
+            <tr>
+                <td class="FotterTableTD"><a href="Impresum.html">Impresum</a></td>
+                <td class="FotterTableTD"><a href="Kontakt.html">Kontakt</a></td>
+            </tr>
+        </table>
+        <p>Copyright &copy; by 'Hanswurst-Irgendwas-3mm GmbH'</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+/* Die CSS Datei zum Projekt */
+/*
+In dieser Datei ist der CSS-Quellcode zum Projekt des Faches ITN festgehalten.
+*/
+
+/* ############################# BASIS ############################### */
+/* Grundlegende Sachen der größten Teilbereiche */
+
+/* CSS für die Ganze Seite, speziell für den 'footer' */
+html{
+	height:100%; /* Gibt 100% der Seitenhöhe an, da ansonsten der 'footer' mittem in der Seite bleibt (besteht aus mehreren Teilen) */
+}
+
+
+/* CSS Code zum Body / Inhalt der Seite, der Global angegeben wird (allgemeingültig) */
+body {
+    /* Basis Hintergrundgestalltung */
+    background-color: #2f4f4f; 		/* Setzt die Hintergrundfarbe auf 'darkslategray' */
+    background-image:   linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,		/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
+                        rgba(0,0,0,0.9) 100%), 								/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
+                        url("../Projektdateien/Bilder/hotel-lobby.jpg");	/* Gibt das Hintergrundbild an, welches mit der Funiton 'linear-gradient' abgedunkelt wird */
+    background-size: 90% 100%;		/* Setzt 10% der Seite mit der Hintergrundfarbe frei und verkleinert somit das Bild */
+    background-repeat: no-repeat;	/* Verhindert das Wiederholen des Hintergrundbildes */
+    background-attachment: fixed;	/* Verhindert das Mitlaufen des Hintergrundbildes */
+    background-position-x: center;	/* Setzt die X-Koordinate  zum Fixieren der Seite in der Mitte*/
+    background-position-y: center;	/* Setzt die Y-Koordinate  zum Fixieren der Seite in der Mitte*/
+
+    /*Basis  Textgestalltung */
+	font-family: 'Segoe UI';	/* 'Globale' Definition der Schriftart */
+	color: white;				/* 'Globale' Definition der Schriftfarbe */
+	text-align: center;			/* 'Globale' Definition der Schriftposition */
+
+	/* Formatiertung: Elternteil für 'header', 'nav', ... */
+	display: flex;				/* Setzt den Container 'Body' als 'flex', um weitere Flexbox-Eigenschaften setzten zu können */
+	flex-direction: column;		/* Gibt in der Flexblox die Ausrichtungsinhalte an (Verikal, Hoizontal, ...) */
+
+	/* Höhen und Breitenangaben */
+	margin: 0px;	/* Setzt die Umrandung der Seite auf 0, damit eine Ausrichtung der einzellnen Elemente ('header', 'nav', 'footer', ...) am Hintergrund möglich ist */
+	height: 100%; 	/* Weiter Angabe zum fixieren des 'footer' an der Unterseite der Seite, durch maximieren des 'body' auf dem Bildschirm */
+}
+
+/* ############################ ALLGEMEIN ############################ */
+/* Allgemein Gültiges, wie ID, Klassen oder Tags, die mit den selben Eigenschaften konfiguriert werden */
+
+/* ###### TAGS ###### */
+/* Allgemeien Tag-Eigenschaften */
+
+/* Für alle Links, die in den Seiten vorkommen */
+a {
+    display: block;					/* Damit wir aus jedem Link ein Blockelement und wie beim Dropdown wird ein Zeilenumbruch durchgeführt (nicht alles in einer Zeile) */
+    color: white;					/* Für die Links soll die Schriftfabe nicht blau, sondern weiß sein */
+    text-decoration: none;			/* die Linktypischen Underlines oder andere 'dekorationen' werden damit entfernt*/	
+}
+
+/*  */
+a:hover {
+	color: #2f4f4f; 				/* Setzt alle Links beim ÜBequeren mit der Maus auf die Farbe 'darkslategray' */
+}
+
+/* ###### ID's ###### */
+/* IDs die in der Seite eingesetzt werden*/
+
+/* Basisanordung für 'nav', 'footer', ...  */
+#WindowSideBorder {
+    margin: 0% 5%;					/* Setzt 'nav', 'footer' und 'header' auf den Abstand zum Rand bzw. bis hin zur Grenze des Hintergrundbildes */
+}
+
+/* ############################# HEADER ############################## */
+/* Deffinition des Header */
+
+/* */
+header {
+    background-image:url("../Projektdateien/Bilder/hands.jpg");	/* Gibt das Bild an, welches im 'header' zu sehen ist */
+    background-repeat:no-repeat;	/* Keine Wiederholung des Bildes */
+    background-size: 100% 100%;		/* Volle große des Bildes */
+    background-position-y: top;		/* Das Bild soll ganz oben auf der Seite anfangen */
+    background-position-x: center;	/* Das Bild soll in der Mitte der Seite ausgerichtet werden */	
+    
+    /* Basisanordung für den 'header' abweichend von den anderen Teilen */
+    padding: 150px;		/* Angabe des Randes, da das Bild ansonsten nach Recht überlaufen würde (Beschränkung der Größe)*/
+}
+
+/* Da ein Darstellungsfehler aufgetreten ist, wurde ab eine bestimmten Größe eine Wertanpassung durchgeführt */
+@media only screen and (max-width: 1024px) {
+	header {
+	
+    /* Basisanordung für den 'header' abweichend von den anderen Teilen */
+    padding:100px; 		/* Andere Größe, da ansonsten ein Überhang auf der rechten Seite  des Bildschirms */
+	}
+}
+
+/* ######################### NAVIGATIONSMENÜ ######################### */
+/* Einstellungen zur Navigationsbar*/
+
+/* Grundeinstellungen für die Navigationsbar*/
+nav {
+    /*  */
+	background: black;				/* Setzen der Hintergrundfarbe 'Schwarz' */
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Kleiner Gleich 1024px */
+/* Anzeigeeinstellungen für eine mobile Webseite */
+@media only screen and (max-width: 1024px) {
+	/* ID für normales Web Menü */
+	#Min-Width-Nav {
+		display: none;				/* Ausblenden und Herausnehmen des normales Web Menüs */
+	}
+	
+	/* ID für mobiles Menü */
+	#Max-Width-Nav {
+		display:flex;				/* Normales Menüauf flexible setzen (Flexbox) */
+		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
+	}
+	
+	/* Einstellungen für den mobilen Menü Button */
+	#Preferences_for_Menu_Button {
+		font-size: 200%;			/* Größe der Schrift */
+		margin: 0px;				/* Keine innere Umrandung */
+		padding: 0px;				/* Keine äußere Umrandung */
+	}
+	
+	/* Einstellungen zum Dropdownmenü */
+	.dropdown-content {
+		background-color: #C0C0C0; /* HTML Silver */
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	/*  */
+		margin: 0;					/* Keine innere Umrandung */
+		padding: 0;					/* Keine äußere Umrandung */
+		position: absolute;			/* Löst das Dropdown von dem Container */
+		display: none;				/* Das standdardmäßge ausblenden des Dropdownmenüs */	
+	}
+	
+	/* Aktion beim Überqueren mit der Maus des Menü Buttons */
+	.dropdown:hover .dropdown-content {
+		display: block;				/* Lässt das Dropdown ersscheinen*/
+	}
+	
+	/* Aktion beim Überqueren mit der Maus der einzelnen Menüpunkte  */
+	a:hover {
+		background-color: #808080; 	/* Hintergrund der Menüpunkte werden eingefärbt in 'HTML DarkGray' */
+	}
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Größer Gleich 1025px */
+/* Anzeigeeinstellungen für eine normales Web Menü */
+@media only screen and (min-width: 1025px) {
+	/* ID für mobiles Menü */
+	#Max-Width-Nav {
+		display: none;				/* Ausblenden des mobilen Menüs */
+	}
+	
+	/* ID für normales Web Menü */
+	#Min-Width-Nav {
+		/* Größenangaben */
+		margin:20px;				/* Setzen des Inneren Randes */
+		padding:0px;				/* Herausnehmen des äußeren Randes */
+    
+		/* Flexboxeigenschaften */
+		display: flex;				/* 'Min-Width-Nav' soll als Container für eine Flexbox dienen */
+		flex-direction: row;		/* Es soll alles Horizontal verlaufen */
+		flex-wrap: wrap;			/* Sorgt bei einer Verängung von Links und Rechts für einen Zeilenumbruch der Links */
+		justify-content:center;		/* Zentrierung der Menüleister in der Mitte von der Seite */
+	}
+	
+	/*  */
+	li:hover {
+		background-color: #C0C0C0; 	/* Hintergrund der Menüpunkte werden eingefärbt in 'HTML Silver' */
+	}
+}
+
+/* Listeneigenschaften für das Navigationsmenü */
+li {
+    padding: 10px 20px;				/* Setzen der oberen und unterenen sowie den Rändern links und rechts */
+    margin: 0px;					/* Kein innerer Rand */
+    display: block;					/* Als Blockelemente definieren (Punkte vor den Listelementen werden ausgeblendet) */
+}
+
+/* ############################# SECTION ############################# */
+/* Hauptteil für den Text*/
+
+/* Grundeinstellungen */
+section {
+    display: flex;					/* Den Bereich als Flexbox definieren */
+	align-items: center;			/* Zentriert die einzelnen Elemente in der Flexbox  */
+	flex-direction: column;			/* Die einzelnen Elemente im Container werden von oben nach unten ausgerichtet */
+	flex:1;							/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Weniger Gleich 1024px */
+@media only screen and (max-width: 1024px) {
+	section img{
+
+		width:45%;					/* Deffinition der Bildgröße anhand der Breite */
+	}
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Weniger Gleich 512px */
+@media only screen and (max-width: 512px) {
+	section img {
+
+		width:60%;					/* Deffinition der Bildgröße anhand der Breite */
+	}
+}
+
+/* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Größer Gleich 1025px */
+@media only screen and (min-width: 1025px) {
+	/* */
+	section img {
+
+		width:35%;					/* Deffinition der Bildgröße anhand der Breite */
+	}
+}
+
+/* ############################# ARTICLE ############################# */
+/* */
+
+/* Grundeinstellungen für den Bereich 'article' */
+article {
+    display: flex;					/* Den Bereich als Flexbox definieren */
+	justify-content: center;		/* Richtet die Flexboxelemete zur Seitenmitte aus */
+	flex-wrap: wrap;				/* Sorgt für bei nicht ausreichendem Platz in der horizontale auf eine verlagerung in der Vertikale */
+	flex:1;							/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
+	
+	padding-top: 3%;				/* Sorgt für einen kleinen Abstand zum 'section' */
+	
+}
+
+/*  */
+@media only screen and (max-width: 512px) {
+	/*  */
+	article {
+		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
+	}
+	
+	/*  */
+	article img{
+		width: 55%;					/* Deffinition der Bildgröße anhand der Breite */
+		filter: grayscale(100%);	/* Grausetzen der Bilder */
+
+	}
+}
+
+/*  */
+@media only screen and (max-width: 1024px) {
+	/*  */
+	article {
+		flex-direction: column;		/* Ausrichtung in vertikaler Richtung*/
+	}
+	
+	/*  */
+	article img{
+		width: 45%;					/* Deffinition der Bildgröße anhand der Breite */
+		filter: grayscale(100%);	/* Grausetzen der Bilder */	
+	}
+}
+
+/*  */
+@media only screen and (min-width: 1025px) {
+	/*  */
+	article img{
+		width:35%;					/* Deffinition der Bildgröße anhand der Breite */
+		filter: grayscale(100%);	/* Grausetzen der Bilder */
+	}
+}
+
+/* ############################## ASIDE ############################## */
+/* Nichts */
+
+/* ############################# FOOTER ############################# */
+/* */
+
+/* Grundeinstellungen des 'footer' */
+footer {
+	background: black;				/* Schwarzer Hintergrund */
+}
+
+/* Größe des Footer */
+table.FotterTable{
+    margin: 0px auto;				/* Höhen und Breitensetzung des 'footer' */
+}
+
+/* Impresum und Kontakt */
+td.FotterTableTD{
+    font-size:small;				/* Setzen der Schriftgröße für Impressum und Kontakt im 'footer'*/
+    padding: 5px 5px;				/* Eine Umrandung zu Abstandsgenerierung */
+}
+
+/* Aktion beim Überfahren mit der Maus */
+td.FotterTableTD:hover{
+    background-color: #808080; 	/* Hintergrund der Menüpunkte werden eingefärbt in 'HTML DarkGray' */
+}
