@@ -308,11 +308,4 @@ td.FotterTableTD:hover{
 		background: black;			/* Schwarzer Hintergrund */
 		font-size: 200%;			/* Größe der Schrift */
 	}
-	
-	/* Impresum und Kontakt */
-	td.FotterTableTD{
-		font-size: 200%;			/* Größe der Schrift */
-		padding: 5px 5px;				/* Eine Umrandung zu Abstandsgenerierung */
-	}
-
 }
