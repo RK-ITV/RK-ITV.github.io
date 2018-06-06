@@ -108,27 +108,24 @@ nav {
 	
 	/* ID für mobiles Menü */
 	#Max-Width-Nav {
-		font-size: 200%;			/* Größe der Schrift */
+		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
 
 	}
 	
 	/* Einstellungen für den mobilen Menü Button */
 	#Preferences_for_Menu_Button {
-		font-size: 400%;			/* Größe der Schrift */
+		font-size: 300%;			/* Größe der Schrift */
 		margin: 0px;				/* Keine innere Umrandung */
 		padding: 0px;				/* Keine äußere Umrandung */
 	}
 	
-	.dropdown {
-		position: relative;
-		display: inline-block;
-		flex-wrap: warp;
+	/* Einstellungen für das Dropdownmenü*/
+	.dropdown {		position: relative; /*  */
+		display: inline-block; /* Positioniert das Dropdoenmenü an der Stelle des Menü Buttons */
 	}
 	
 	/* Einstellungen zum Dropdownmenü */
 	.dropdown-content {
-		z-index: 1;
-		font-size: 300%;			/* Größe der Schrift */
 		background-color: #C0C0C0; /* HTML Silver */
 		min-width: 160px;			/* Gibt eine Mindestgröße an */
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	/* Erzeugt einen Schatten hinter der Box */
@@ -188,17 +185,18 @@ li {
 
 /* Grundeinstellungen */
 section {
-    display: flex;					/* Den Bereich als Flexbox definieren */
+	font-size: 200%;			/* Größe der Schrift */
+    	display: flex;				/* Den Bereich als Flexbox definieren */
 	align-items: center;			/* Zentriert die einzelnen Elemente in der Flexbox  */
 	flex-direction: column;			/* Die einzelnen Elemente im Container werden von oben nach unten ausgerichtet */
-	flex:1;							/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
+	flex:1;					/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
 }
 
 /* Ab einer bestimmten Größe wird eine Wertanpassung durchgeführt: Weniger Gleich 1024px */
 @media only screen and (max-width: 1024px) {
 	section img{
 
-		width:45%;					/* Deffinition der Bildgröße anhand der Breite */
+		width:45%;			/* Deffinition der Bildgröße anhand der Breite */
 	}
 }
 
@@ -206,7 +204,7 @@ section {
 @media only screen and (max-width: 512px) {
 	section img {
 
-		width:60%;					/* Deffinition der Bildgröße anhand der Breite */
+		width:60%;			/* Deffinition der Bildgröße anhand der Breite */
 	}
 }
 
@@ -215,7 +213,7 @@ section {
 	/* */
 	section img {
 
-		width:35%;					/* Deffinition der Bildgröße anhand der Breite */
+		width:35%;			/* Deffinition der Bildgröße anhand der Breite */
 	}
 }
 
@@ -224,12 +222,12 @@ section {
 
 /* Grundeinstellungen für den Bereich 'article' */
 article {
-    display: flex;					/* Den Bereich als Flexbox definieren */
+    display: flex;				/* Den Bereich als Flexbox definieren */
 	justify-content: center;		/* Richtet die Flexboxelemete zur Seitenmitte aus */
-	flex-wrap: wrap;				/* Sorgt für bei nicht ausreichendem Platz in der horizontale auf eine verlagerung in der Vertikale */
-	flex:1;							/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
-	
-	padding-top: 3%;				/* Sorgt für einen kleinen Abstand zum 'section' */
+	flex-wrap: wrap;			/* Sorgt für bei nicht ausreichendem Platz in der horizontale auf eine verlagerung in der Vertikale */
+	flex:1;					/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
+
+	padding-top: 3%;			/* Sorgt für einen kleinen Abstand zum 'section' */
 	
 }
 
@@ -242,7 +240,7 @@ article {
 	
 	/*  */
 	article img{
-		width: 55%;					/* Deffinition der Bildgröße anhand der Breite */
+		width: 50%;			/* Deffinition der Bildgröße anhand der Breite */
 		filter: grayscale(100%);	/* Grausetzen der Bilder */
 
 	}
@@ -257,7 +255,7 @@ article {
 	
 	/*  */
 	article img{
-		width: 45%;					/* Deffinition der Bildgröße anhand der Breite */
+		width: 40%;			/* Deffinition der Bildgröße anhand der Breite */
 		filter: grayscale(100%);	/* Grausetzen der Bilder */	
 	}
 }
@@ -266,7 +264,7 @@ article {
 @media only screen and (min-width: 1025px) {
 	/*  */
 	article img{
-		width:35%;					/* Deffinition der Bildgröße anhand der Breite */
+		width:35%;			/* Deffinition der Bildgröße anhand der Breite */
 		filter: grayscale(100%);	/* Grausetzen der Bilder */
 	}
 }
@@ -279,7 +277,7 @@ article {
 
 /* Grundeinstellungen des 'footer' */
 footer {
-	background: black;				/* Schwarzer Hintergrund */
+	background: black;			/* Schwarzer Hintergrund */
 }
 
 /* Größe des Footer */
