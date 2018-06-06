@@ -109,8 +109,7 @@ nav {
 	/* ID für mobiles Menü */
 	#Max-Width-Nav {
 		font-size: 200%;			/* Größe der Schrift */
-		display:flex;				/* Normales Menüauf flexible setzen (Flexbox) */
-		justify-content:center;		/* Zentieren des einzellenn Items in dem Container */
+
 	}
 	
 	/* Einstellungen für den mobilen Menü Button */
