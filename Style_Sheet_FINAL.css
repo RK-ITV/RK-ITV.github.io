@@ -233,7 +233,7 @@ article {
 	justify-content: center;		/* Richtet die Flexboxelemete zur Seitenmitte aus */
 	flex-wrap: wrap;			/* Sorgt für bei nicht ausreichendem Platz in der horizontale auf eine verlagerung in der Vertikale */
 	flex:1;					/* zusatz zum 'footer': Der  Wert wird als Seitenverhältnis zu den anderen Flexboxelementen benötigt (speziell für den 'footer')*/
-
+	align-items:center;			/* Die einzelnen Items werden nicht */
 	padding-top: 3%;			/* Sorgt für einen kleinen Abstand zum 'section' */
 	
 }
