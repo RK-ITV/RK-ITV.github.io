@@ -17,7 +17,7 @@ body {
     /* Basis Hintergrundgestalltung */
     background-color: #2f4f4f; 		/* Setzt die Hintergrundfarbe auf 'darkslategray' */
     background-image:   linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,		/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
-                        rgba(0,0,0,0.9) 100%), 					/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
+                        rgba(0,0,0,0.6) 100%), 					/* Funktion zum Farbverlauf; Dient dazu die Seite von Oben nach Unten mit einem Grauschleier zu belegen */
                         url("RK-ITV.github.io/Bilder/hotel-lobby.jpg");		/* Gibt das Hintergrundbild an, welches mit der Funiton 'linear-gradient' abgedunkelt wird */
     background-size: 90% 100%;		/* Setzt 10% der Seite mit der Hintergrundfarbe frei und verkleinert somit das Bild */
     background-repeat: no-repeat;	/* Verhindert das Wiederholen des Hintergrundbildes */
